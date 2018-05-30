@@ -36,6 +36,9 @@ h5{
     padding-bottom: 20px;
     background-color: beige;
 }
+#people{
+    padding-left: 30px;
+}
 .jumbotron{
     background-repeat: no-repeat;
     background-size: cover;
