@@ -1,0 +1,188 @@
+/*CSS layout file*/
+body {
+  background-color: white;
+}
+h1 {
+  color: maroon;
+}
+p {
+  color: gray;
+}
+p1 {
+  color: gold;
+}
+p2{
+ color: blue;
+}
+p3{
+ color: gray;
+}
+h5{
+    color:gray;
+}
+#bar{
+    background-color: maroon;
+    padding-bottom: 70px
+
+}
+#RASC{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+#box{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: beige;
+}
+.jumbotron{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    margin-top: 45px;
+    font-size: 48px;
+    color:#fff;
+    text-align: center;
+}
+
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: beige;
+}
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: maroon;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 24px;
+}
+
+/* Style the list */
+ul.tab c{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+/* Style the links inside the list items */
+ul.tab li c {
+    
+    display: inline-block;
+    color: black;
+    padding: 10px 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: white;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: white;}
+
+/* Change background color of links on hover */
+ul.tab li c:hover {background-color: white;}
+
+/* Create an active/current tablink class */
+ul.tab li c:focus, .active {background-color: white;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 8px;
+    border-top: none;
+}
+
+/*JQuery funsies*/
+.grid-block-container {
+    float: center;
+    width: 990px;
+    margin: 20px 0 0 -30px;
+}
+
+.grid-block {
+    position: relative;
+    float: center;
+    width: 300px;
+    height: 250px;
+    margin: 0 0 30px 30px;
+}
+.grid-block h4 {
+    font-size: .9em;
+    color: #333;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(trans-black-50.png);
+    width: 100%;
+    height: 100%;
+}
+.caption h3, .caption p {
+    color: #fff;
+    margin: 20px;
+}
+.caption h3 {
+    margin: 20px 20px 10px;
+}
+.caption p {
+    font-size: .75em;
+    line-height: 1.5em;
+    margin: 0 20px 15px;
+}
+footer {
+  font-size: 20px;
+  padding: 20px 0 #000;
+  background-color: maroon;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
