@@ -73,6 +73,9 @@ h5{
 #outreachimg{
     text-align: center;
 }
+#outreachinfo{
+    margin: 25px;
+}
 
 /* Style the list */
 ul.tab {
