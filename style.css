@@ -107,6 +107,9 @@ h5{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+#openhouse{
+    margin: 40px;
+}
 
 /* Style the list */
 ul.tab {

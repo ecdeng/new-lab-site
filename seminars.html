@@ -29,7 +29,587 @@
 				  		</ul>
 		</header>
 		<body>
-			
+			<script src="tabscript.js"></script>
+			<style type="text/css">
+				.growImage {position:relative;width:80%;left:15px;top:15px}
+				.growDiv { left: 100px; top: 100px;width:150px;height:150px;position:relative }
+			</style>
+			<div id="peoplebox">
+				<ul class="tabmini">
+					<div class="row">
+				  		<div class="col-sm-6">
+				  			<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'seminars')">2014-15 Seminars</a></li>
+				  		</div>
+				  		<div class="col-sm-6">
+				  			<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'past')">Past Seminars</a></li>
+				  		</div>
+				  	</div>
+				</ul>
+				<div id="seminars" class="tabcontent">
+					<h4>May 14, 2015 Timothy Bretl Mechanics, Manipulation, and Perception of an Elastic Rod</h4>
+
+					<h6>Abstract: This talk is about robotic manipulation of canonical "deformable linear objects" like a Kirchhoff elastic rod (e.g., a flexible wire). I  continue to be amazed by how much can be gained by looking carefully at the mechanics of these objects and at the underlying  mathematics. For example, did you know that the free configuration space of an elastic rod is path-connected? I'll prove it, and tell you  why it matters.<br><br>
+
+					Bio: Timothy Bretl comes from the University of Illinois at Urbana-Champaign, where he is an Associate Professor of Aerospace Engineering  and of the Coordinated Science Laboratory. http://bretl.csl.illinois.edu/</h6><br>
+
+					 
+
+					<h4>May 13, 2015 Herke van Hoof Robot Learning from Vision and Tactile Sensing</h4>
+
+					<h6>Abstract: To act autonomously in dynamic, unstructured environments, robots have to be able to adapt to unforseen conditions. This adaptation requires the robot to learn from its own actions and their sensory effects -- often with weak or nonexistent supervision. I will present two possible learning methods based on information-theoretic principles that are tailored to such situations. First, we consider an unsupervised robot with minimal prior knowledge attempting to learn about its environment. It can only learn through observed sensory feedback obtained though interaction with its environment. In a bottom-up, probabilistic approach, the robot tries to segment the objects in its environment through clustering with minimal prior knowledge based on static visual scene features and observed movement. Information-theoretic principles can be used to autonomously select actions that maximize the expected information gain, and thus learning speed. In the reinforcement learning paradigm, on the other hand, feedback is available in the form of reward signals. In contrast to these weak reward signals stand rich sensory data, that even for simple tasks is often non-linear and high-dimensional. Sensory data can be leveraged to learn a system model, but in high-dimensional sensory spaces this step often requires manually designing features. We propose a robot reinforcement learning algorithm with a learned non-parametric model, value function, and policy that can deal with high-dimensional state representations. As such, the algorithm is well-suited to deal with tactile sensors in real robotic hands.<br><br>
+
+					Bio: Herke van Hoof is a Ph.D. student at the institute for Intelligent Autonomous Systems at TU Darmstadt, Germany under the supervision of Jan Peters. Herke holds both a M.Sc. and B.Sc. degree in Artificial Intelligence from the University of Gronigen in the Netherlands. He is interested in machine-learning for robots in unstructured environments with minimal human supervision. His work has focused on unsupervised learning and reinforcement learning, as well as Bayesian methods and non-parametric techniques.</h6><br>
+
+					 
+
+					April 14, 2015 Anca Dragan TBA
+
+					 
+
+					March 3, 2015 Sergey Levine Deep Learning for Decision Making and Control
+
+					Abstract: A remarkable feature of human and animal intelligence is the ability to autonomously acquire new behaviors. My work is concerned with designing algorithms that aim to bring this ability to robots and simulated characters. A central challenge in this field is to learn behaviors with representations that are sufficiently general and expressive to handle the wide range of motion skills that are necessary for real-world applications, such as general-purpose household robots. These representations must also be able to operate on raw, high-dimensional inputs and outputs, such as camera images, joint torques, and muscle activations. I will describe a class of guided policy search algorithms that tackle this challenge by transforming the task of learning control policies into a supervised learning problem, with supervision provided by simple, efficient trajectory-centric methods. I will show how this approach can be applied to a wide range of tasks, from locomotion and push recovery to robotic manipulation. I will also present new results on using deep convolutional neural networks to directly learn policies that combine visual perception and control, learning the entire mapping from rich visual stimuli to motor torques on a real robot. I will conclude by discussing future directions in deep sensorimotor learning and how advances in this emerging field can be applied to a range of other areas.
+
+					Bio: Sergey Levine is a postdoctoral researcher working with Professor Pieter Abbeel at UC Berkeley. He completed his PhD in 2014 with Vladlen Koltun at Stanford University. His research focuses on robotics, machine learning, and computer graphics. In his PhD thesis, he developed a novel guided policy search algorithm for learning rich, expressive locomotion policies. In later work, this method enabled learning a range of robotic manipulation tasks, as well as end-to-end training of policies for perception and control. He has also developed algorithms for learning from demonstration, inverse reinforcement learning, and data-driven character animation.
+
+					 
+
+					February 26, 2015 Lydia E. Kavraki  Reasoning for Complex Physical Systems
+
+					Abstract: Robots are rapidly evolving from simple instruments for repetitive tasks to increasingly sophisticated machines capable of performing challenging operations in our daily environment. As they make their way out of custom-made workspaces in factories, algorithms that integrate task and motion planning are needed to enable robots to autonomously execute high-level tasks. This talk will describe a novel framework for the synthesis of motion plans using specifications expressed in temporal logics and sampling-based motion planners. The power and extensibility of the framework has led to algorithmic advances for analyzing the motion and function of proteins, the worker molecules of all cells. The talk will conclude by discussing robotics-inspired methods for computing the flexibility of proteins and large macromolecular complexes with the ultimate goals of deciphering molecular function and aiding the discovery of new therapeutics.
+
+					Bio: Lydia E. Kavraki is the Noah Harding Professor of Computer Science and Bioengineering at Rice University. Kavraki received her B.A. in Computer Science from the University of Crete in Greece and her Ph.D. in Computer Science from Stanford University. Her research contributions are in physical algorithms and their applications in robotics, as well as in computational structural biology and biomedicine. Kavraki has authored more than 200 peer-reviewed journal and conference publications and a co-author of the popular robotics textbook "Principles of Robot Motion" published by MIT Press. She is heavily involved in the development of The Open Motion Planning Library, which is used in industry and in academic research in robotics and medicine. Kavraki is a Fellow of the Association of Computing Machinery, a Fellow of the Institute of Electrical and Electronics Engineers, a Fellow of the Association for the Advancement of Artificial Intelligence, a Fellow of the American Institute for Medical and Biological Engineering, a Fellow of the American Association for the Advancement of Science, and a member of the Institute of Medicine of the National Academies. She was recently recognized with the Women in Science Award from BioHouston.
+
+					 
+
+					February 25, 2015 Andrea Thomaz  Robots Learning from Human Teachers
+
+					Abstract: In this talk I present recent work from the Socially Intelligent Machines Lab at Georgia Tech. Our research aims to computationally model mechanisms of human social learning in order to build robots and other machines that are intuitive for people to teach. We take Machine Learning interactions and redesign interfaces and algorithms to support the collection of learning input from naive humans. This talk covers results on building computational models of reciprocal interactions, high-level task goal learning, low-level skill learning, and active learning interactions using humanoid robot platforms.
+
+					Bio: Andrea L. Thomaz is an Associate Professor of Interactive Computing at the Georgia Institute of Technology. She directs the Socially Intelligent Machines lab, which is affiliated with the Institute for Robotics and Intelligent Machines (IRIM). She earned a B.S. in Electrical and Computer Engineering from the University of Texas at Austin in 1999, and Sc.M. and Ph.D. degrees from MIT in 2002 and 2006. Dr. Thomaz has published in the areas of Artificial Intelligence, Robotics, and Human-Robot Interaction. She received an ONR Young Investigator Award in 2008, and an NSF CAREER award in 2010. Her work has been featured in the New York Times, on NOVA Science Now, she was named one of MIT Technology Review’s TR 35 in 2009, and on Popular Science Magazine’s Brilliant 10 list in 2012.
+
+					 
+
+					February 12, 2015 Bilge Mutlu Human-Centered Methods and Principles for Designing Robotic Products
+
+					Abstract: The increasing emergence of robotic technologies that serve as automated tools, assistants, and collaborators promises tremendous benefits in everyday settings from the home to manufacturing facilities. While robotic technologies promise interactions that can be far more complex than those with conventional ones, their successful integration into the human environment requires these interactions to be also natural and intuitive. To achieve complex but intuitive interactions, designers and developers must simultaneously understand and address computational and human challenges. In this talk, I will present my group's work on building human-centered guidelines, methods, and tools to address these challenges in order to facilitate the design of robotic technologies that are more effective, intuitive, acceptable, and even enjoyable. In particular, I will present a series of projects that demonstrate how a marrying of knowledge about people and computational methods can enable effective user interactions with social, assistive, and telepresence robots and the development of novel tools and methods that support complex design tasks across the key stages of the design process. I will additionally present ongoing work that applies these guidelines to the development of real-world applications of robotic technology as well as future directions in enabling the successful integration of these technologies into everyday settings.
+
+					Bio: Bilge Mutlu is an assistant professor of computer science, psychology, and industrial engineering at the University of Wisconsin-Madison. He received his Ph.D. degree from Carnegie Mellon University's Human-Computer Interaction Institute in 2009. His background combines training in interaction design, human-computer interaction, and robotics with industry experience in product design and development. Dr. Mutlu is a former Fulbright Scholar and the recipient of the NSF CAREER award as well as several best paper awards and nominations, including HRI 2008, HRI 2009, HRI 2011, UbiComp 2013, IVA 2013, RSS 2013, and HRI 2014. His research has been covered by national and international press including the NewScientist, MIT Technology Review, Discovery News, Science Nation, and Voice of America. He has served in the Steering Committee of the HRI Conference and the Editorial Board of IEEE Transactions on Affective Computing, co-chairing the Program Committees for HRI 2015, ROMAN 2015, and ICSR 2011 and the Program Sub-committees on Design for CHI 2013 and CHI 2014.
+
+					 
+
+					November 13, 2014 Sergey Levine Learning to Move: Machine Learning for Robotics and Animation
+
+					Abstract: Being able to acquire new motion skills autonomously could help robots build rich motion repertoires suitable for tackling complex, varied environments. I will discuss my work on motion skill learning for robotics, including methods for learning from demonstration and reinforcement learning. In particular, I will describe a class of "guided" policy search algorithms, which combine reinforcement learning and learning from demonstration to acquire multiple simple, trajectory-centric policies, with a supervised learning phase to obtain a single complex, high-dimensional policy that can then generalize to new situations. I will show applications of this method to simulated bipedal locomotion, as well as a range of robotic manipulation tasks, including putting together two parts of a plastic toy and screwing bottle caps onto bottles. I will also discuss how such techniques can be applied to character animation in computer graphics, and how this field can inform research in robotics.
+
+					Bio: Sergey Levine is a postdoctoral researcher working with Professor Pieter Abbeel at the University of California at Berkeley. He previously completed his PhD with Professor Vladlen Koltun at Stanford University. His research areas include robotics, reinforcement learning and optimal control, machine learning, and computer graphics. His work includes the development of new algorithms for learning motor skills, methods for learning behaviors from human demonstration, and applications in robotics and computer graphics, ranging from robotic manipulation to animation of martial arts and conversational hand gestures.
+
+					 
+
+					November 11, 2014 Sachin Patil  Coping with Uncertainty in Robotic Navigation, Exploration, and Grasping
+
+					Abstract: A key challenge in robotics is to robustly complete navigation, exploration, and manipulation tasks when the state of the world is uncertain. This is a fundamental problem in several application areas such as logistics, personal robotics, and healthcare where robots with imprecise actuation and sensing are being deployed in unstructured environments. In such a setting, it is necessary to reason about the acquisition of perceptual knowledge and to perform information gathering actions as necessary. In this talk, I will present an approach to motion planning under motion and sensing uncertainty called "belief space" planning where the objective is to trade off exploration (gathering information) and exploitation (performing actions) in the context of performing a task. In particular, I will present how we can use trajectory optimization to compute locally-optimal solutions to a determinized version of this problem in Gaussian belief spaces. I will show that it is possible to obtain significant computational speedups without explicitly optimizing over the covariances by considering a partial collocation approach. I will also address the problem of computing such trajectories, given that measurements may not be obtained during execution due to factors such as limited field of view of sensors and occlusions. I will demonstrate this approach in the context of robotic grasping in unknown environments where the robot has to simultaneously explore the environment and grasp occluded objects whose geometry and positions are initially unknown.
+
+					Bio: Sachin Patil is a postdoctoral researcher working with Prof. Pieter Abbeel and Prof. Ken Goldberg at the University of California at Berkeley. He previously completed his PhD with Prof. Ron Alterovitz at University of North Carolina at Chapel Hill. His research focuses on developing rigorous motion planning algorithms to enable new, minimally invasive medical procedures and to facilitate reliable operation of robots in unstructured environments.
+
+					 
+
+					October 29, 2014    Brian Scassellati    Building Models of Self and Task
+
+					Abstract: This talk is an amalgamation of two topics that came out of research on building socially collaborative systems that focus on building richer representations of both robots and the tasks that they engage in. First, I will discuss methods for building self-trained models of a robot's own kinematic structure and sensory systems. Second, I will describe on-going efforts to automatically learn hierarchical representations of task structure from observations. These two topics, taken together, present a novel viewpoint of how we can restructure the way in which we view the division between built-in representations and learned methods.
+
+					Bio: Brian Scassellati is a Professor of Computer Science, Cognitive Science, and Mechanical Engineering at Yale University and Director of the NSF Expedition on Socially Assistive Robotics. His research focuses on building embodied computational models of human social behavior, especially the developmental progression of early social skills. Using computational modeling and socially interactive robots, his research evaluates models of how infants acquire social skills and assists in the diagnosis and quantification of disorders of social development (such as autism).
+
+					 
+
+					October 28, 2014    Bilge Mutlu  Human-Centered Methods and Principles for Designing Robotic Products
+
+					Abstract: Robotic products constitute an emerging family of technologies that holds tremendous promise for everyday use. This promise also presents challenges for designers: the interactions they afford can be far more complex than those with conventional products, and designing for these interactions introduces many new questions. For instance, how can we design a product that follows human social norms? What is the design space for such a product? How can we empower designers to tackle such design problems? In this talk, I will present my group's work on building human-centered tools, methods, and knowledge to enable the design of robotic products. In particular, I will describe the development of novel tools and methods that support complex design tasks across the key stages of the design process, including analysis, synthesis, and evaluation, and an exploration into the design space for robotic products across different platforms, including social, assistive, and telepresence robots.
+
+					Bio: Bilge Mutlu is an assistant professor of computer science, psychology, and industrial engineering at the University of Wisconsin-Madison. He received his Ph.D. degree from Carnegie Mellon University's Human-Computer Interaction Institute in 2009. His background combines training in interaction design, human-computer interaction, and robotics with industry experience in product design and development. Dr. Mutlu is a former Fulbright Scholar and the recipient of the NSF CAREER award and several paper awards and nominations, including HRI 2008, HRI 2009, HRI 2011, UbiComp 2013, IVA 2013, RSS 2013, and HRI 2014. His research has been covered by national and international press including the NewScientist, MIT Technology Review, Discovery News, Science Nation, and Voice of America. He has served in the Steering Committee of the HRI Conference and the Editorial Board of IEEE Transactions on Affective Computing, co-chairing the Program Committees for HRI 2015 and ICSR 2011 and the Program Sub-committees on Design for CHI 2013 and CHI 2014.
+
+					 
+
+					October, 23, 2014    Jeremy L. Wyatt    Robots in Our World: Uncertain, Incomplete and Unfamiliar
+
+					Abstract: To make transfer to applications in everyday domains robots require the ability to cope with novelty, incomplete information and uncertainty. In this talk I will describe a line of work carried out over ten years that provides methods to tackle this. In particular I will focus on two problems: object search and manipulation. Both require the ability to reason about open or novel worlds. The results are demonstrated in a variety of robot systems: in particular the Dora and Boris robots. Dora is one of the first mobile robots able to plan in open worlds, using the notion of assumptions. Dora also uniquely attempts to explain and then verify explanations in the face of failure. Boris is a robot system for manipulation that can grasp novel objects, and if there is time I will also describe algorithms we are developing for Boris that allow active gathering of information to support manipulation.
+
+					Bio: Jeremy L. Wyatt is Professor of Robotics and Artificial Intelligence at the University of Birmingham. He gained his PhD from Edinburgh in 1996. He has published more than 80 papers, been the recipient of two best paper awards, and has led a variety of international robotics projects. He is interested in particular in robot planning and learning.
+				</div>
+				<div id="past" class="tabcontent">	
+					<div class="row">
+						<div class="col-sm-2">
+							April 5, 2014
+
+							April 24, 2014
+
+							April 15, 2014
+
+							December 3, 2013
+
+							December 2, 2013
+
+							June 21, 2013
+
+							March 7, 2013
+
+							September 12, 2012
+
+							August 27, 2012
+
+							 
+
+							August 22, 2012
+
+							May 29, 2012
+
+							May 24, 2012
+
+							 
+
+							May 23, 2012
+
+							May 10, 2012
+
+							May 2, 2012
+
+							 
+
+							April 19, 2012
+
+							April 11, 2012
+
+							 
+
+							March 29, 2012
+
+							 
+
+							March 19, 2012
+
+							 
+
+							December 7, 2011
+
+							November 29, 2011
+
+							 
+
+							April 28, 2011
+
+							May 10, 2010
+
+							 
+
+							April 1, 2010
+
+							June 16, 2009
+
+							March 24, 2009
+
+							January 6, 2009
+
+							November 20, 2008
+
+							October 27, 2008
+
+							February 5, 2008
+
+							November 12, 2007
+
+							April 16, 2007
+
+							December 12, 2006
+
+							March 30, 2006
+
+							February 17, 2006
+
+							 
+
+							January 19, 2006
+
+							 
+
+							August 22, 2005
+
+							August 15, 2005
+
+							July 28, 2005
+
+							July 26, 2005
+
+							July 26, 2005
+
+							January 20, 2005
+
+							January 12, 2005
+
+							September 08, 2004
+
+							May 20, 2004
+
+							May 17, 2004
+
+							May 10, 2004
+
+							November 12, 2003
+
+							November 3, 2003
+
+							October 23, 2003
+
+							October 21, 2003
+
+							September 30, 2003
+
+							September 4, 2003
+
+							May 5, 2003
+
+							April 28, 2003
+
+							April 15, 2003
+
+							April 03, 2003
+
+							March 13, 2003
+
+							February 24, 2003
+
+							February 19, 2003
+
+							February 12, 2003
+
+							January 28, 2003
+
+							January 23, 2003
+
+							December 5, 2002
+
+							November 26, 2002
+
+							November 25, 2002
+
+							November 14, 2002
+
+							November 6, 2002
+
+							October 28, 2002
+
+							 
+
+							September 26, 2002
+						</div>	
+						<div class="col-sm-4">
+							Mac Schwager
+
+							Steven M. LaValle
+
+							Various Speakers
+
+							Shiwali Mohan
+
+							Alexander Kleiner
+
+							Elizabeth Broadbent
+
+							Dani Goldberg
+
+							Sebastian Trimpe
+
+							Nancy Amato
+
+							 
+
+							Prof. Guy Hoffman
+
+							Ian Baldwin
+
+							Dikai Liu
+
+							 
+
+							Richard Vevers
+
+							Ambarish Goswami
+
+							Marcelo Kallmann
+
+							 
+
+							Henrik Christensen
+
+							Monica Nicolescu
+
+							 
+
+							M. Ani Hsieh
+
+							 
+
+							Masayuki Inaba
+
+							 
+
+							Various Speakers
+
+							Evangeline Pollard
+
+							 
+
+							Nora Ayanian
+
+							Minoru Asada
+
+							 
+
+							Various Speakers
+
+							Dr. Louis-Philippe Morency
+
+							Dr. Luca Scardovi
+
+							Anand Panangadan
+
+							Marina Fridin
+
+							Dr. Corinna Lathan
+
+							Prof. John K. Tsotsos
+
+							Kristina Lerman
+
+							James McLurkin
+
+							Dr. Stewart Tansley
+
+							Alexandre R.J. Francois
+
+							Richard Vaughan
+
+							 
+
+							Kjerstin Williams
+
+							 
+
+							Prof. Dong-Jo Park
+
+							Pascual Campoy
+
+							Rachel Gockley
+
+							Haye Lau
+
+							Cindy Leung
+
+							Adriana Tapus
+
+							Illah R. Nourbakhsh
+
+							Frank Heinz
+
+							Betsy Jones Stork
+
+							Andrew E. Johnson
+
+							Paul Schenker
+
+							 Dieter Fox
+
+							Francois Michaud
+
+							Paolo Gaudiano
+
+							John DeCuir
+
+							Asad Madni
+
+							Juergen Rossmann
+
+							Illah Nourbakhsh
+
+							Daniela Rus
+
+							Joseph Ayers
+
+							Paul Schenker
+
+							Wei-Min Shen and Peter Will
+
+							Dan Dennett
+
+							Peter Corke
+
+							Alan Peters
+
+							George Bekey
+
+							Hamid Berenji
+
+							Paolo Pirjanian
+
+							Oussama Khatib
+
+							Aram Galstyan
+
+							Feng Zhao
+
+							Camillo J. Taylor
+
+							Bob Full
+
+							 
+
+							Rodney Brooks
+							
+						</div>	
+						<div class="col-sm-6">
+							Controlling Groups of Robots with Unreliable Relative Sensing
+
+							Virtual Reality, Really!
+
+							Second Symposium on the Futures of Robotics
+
+							Learning Hierarchical Tasks from Situated Interactive Instruction.
+
+							Collaborative Robotics
+
+							The Social and Emotional Impact of Robots in Healthcare
+
+							Bluefin Robotics – Overview, Technologies, Challenges
+
+							Event-Based State Estimation in Networked Control Systems
+
+							Sampling-Based Motion Planning: From Intelligent CAD to Crowd Simulation to Protein Folding
+
+							Action Fluency and Timing in Human-Robot Collaboration
+
+							Large-scale, Long-term Road Vehicle Localization
+
+							Methodologies that Enable Real Practical Applications of Robotic Systems in Dynamic and Unstructured Environments
+
+							Revealing our Oceans to the World
+
+							Fall Control of Humanoid Robots
+
+							Planning Algorithms for Computer Animation: from Humanlike Search Spaces to Local Clearance Triangulations
+
+							Semantic SLAM
+
+							Context-Based Intent Understanding for Autonomous Systems in Naval and Collaborative Robotics Applications
+
+							Collaborative Tracking of Geophysical Flows: How Local Measurements Discover Global Structures
+
+							Research and Development of Long-term Mother Environment for Systems and Devices of Humanoid and Home Assistance in JSK Robotics Lab
+
+							USC Symposium on the Futures of Robotics
+
+							Data Fusion and Multitarget Tracking: Some Interests for Military and Automobile Applications
+
+							Automatic Synthesis of Multirobot Feedback Control Policies
+
+							From Physical Interaction to Social One: a Perspective from Cognitive Developmental Robotics
+
+							USC Distinguished Lecture Day of Robotics
+
+							Computational Study Of Nonverbal Social Communication
+
+							Synchronization and collective motion in natural and engineered networked systems
+
+							Resource Management using Adaptive Sensing for a Body Area Network
+
+							Body Expression of Emotion in Socially Assistive Robotics
+
+							Interactive Robots for Kids with Disabilities - A Discussion
+
+							Towards a Visually-Guided Semi-Autonomous Wheelchair for the Disabled
+
+							The Social Web
+
+							Conference Room Complexity Metrics for Physical Computation on Multi-Robot Systems
+
+							Robotics at Microsoft -- A Personal Journey & Perspective
+
+							Architectural Abstractions for Modeling Complex Dynamic Systems
+
+							Assault and Batteries: Ethological and Ecological Approaches to Intelligent Autonomous Robots
+
+							 Multi-robot Systems: Modeling Swarm Dynamics and Designing Inspection Planning Algorithms
+
+							Evolution of Robotics Research Activities in KAIST
+
+							Computer Vision at UPM-DISAM.Two study cases: Vision for UAV and Web Visual Inspection
+
+							Designing Robots for Long-Term Social Interaction
+
+							Optimal Search for Multiple Targets in a Built Environment
+
+							Trajectory Planning for Multiple Robots in Bearing-Only Target Localisation
+
+							Topological SLAM using Fingerprints of Places
+
+							Human-Robot Collaboration for Learning
+
+							Using a Graphical 3D-Simulation System for Patient Positioning in Radiotherapy
+
+							Institute for Educational Advancement
+
+							The Mars Exploration Rover Descent Image Motion Estimation System
+
+							Open Problems and R&D Challenges in Space Robotics
+
+							Distributed Multi-robot Exploration and Mapping
+
+							Integration Challenges of Real World Intelligent Mobile Robotics
+
+							Integration Challenges of Real World Intelligent Mobile Robotics
+
+							Robotics at Sony
+
+							Full Circle Commercialization of a Dual-Use Micromachined Quartz Rate Sensor Technology
+
+							How to build virtual worlds based on robotics knowledge
+
+							Personal Robotics and Beyond: Applied Social Robotics
+
+							Self-reconfiguring Robotics
+
+							Neural Network Based Controllers for Biomimetic Underwater Robots
+
+							The Expanding Venue and Persistence of Planetary Mobile Exploration
+
+							Self-Reconfigurable Robots/Systems and Digital Hormones
+
+							 Avoiding Disasters in Deterministic Universes
+
+							Large Mobile Robots for Underground Mining
+
+							Humanoid behavior acquisition through teleoperation
+
+							Rehabilitation Robotics: A Progress Report
+
+							Co-Evolutionary Reinforcement Learning for Multi Agent Systems
+
+							Challenges of Consumer Robotics
+
+							Human-centered Robotics and Interactive Haptic Simulation
+
+							Congestion Games and Emergent Coordination in Non-Stationary Environments
+
+							Distributed Algorithms for Networked Embedded Sensing Systems
+
+							Dynamic Sensor Planning and Control
+
+							Bipedal Bugs, Galloping Ghosts and Gripping Geckos: BioInspired Artificial Muscle, Robots and Adhesives
+
+							The Future of Robots in Our Lives
+							
+						</div>		
+					</div>	
+				</div>
+			</div>
 		</body>
 		<footer>
 			<a href="https://viterbischool.usc.edu/"> <img src="pics/viterbi.svg" style="width:22%" align="right" /></a>
