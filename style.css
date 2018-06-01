@@ -53,12 +53,9 @@ h5{
     padding-left: 30px;
 }
 #box{
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     background-color: beige;
-    margin: 25px;
+    margin: 50px;
 }
 #people{
     padding-left: 30px;
@@ -111,6 +108,7 @@ h5{
     margin: 40px;
 }
 
+
 /* Style the list */
 ul.tab {
     list-style-type: none;
@@ -136,8 +134,8 @@ ul.tab li a {
 /* Style the list */
 ul.tabmini {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 10px;
     overflow: hidden;
     background-color: lightgray;
 }
@@ -149,8 +147,28 @@ ul.tabmini li a{
     color: maroon;
     font-family: Helvetica, Arial;
     text-align: center;
-    padding: 20px 18px;
-    padding-left: 20px;
+    padding: 20px 200px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+ul.tabmini2 {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+ul.tabmini2 li{ float:left;} 
+
+/* Style the links inside the list items */
+ul.tabmini2 li a{
+    display: inline-flex;
+    color: maroon;
+    font-family: Helvetica, Arial;
+    text-align: center;
+    padding: 20px 48px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 18px;
@@ -181,6 +199,12 @@ ul.tabmini li a:hover {background-color: white;}
 
 /* Create an active/current tablink class */
 ul.tabmini li a:focus, .active {background-color: white;}
+
+/* Change background color of links on hover */
+ul.tabmini2 li a:hover {background-color: white;}
+
+/* Create an active/current tablink class */
+ul.tabmini2 li a:focus, .active {background-color: white;}
 
 /* Style the tab content */
 .tabcontent {
