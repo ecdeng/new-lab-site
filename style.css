@@ -42,17 +42,15 @@ h5{
     overflow: hidden;
 }
 
-
-
-
 #bar{
     background-color: maroon;
-    padding-bottom: 70px;
-    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
 #RASC{
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 #box{
     padding-top: 20px;
@@ -103,6 +101,11 @@ h5{
 }
 #outreachinfo{
     margin: 25px;
+}
+#eventinfo{
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Style the list */
@@ -184,9 +187,9 @@ ul.tabmini li a:focus, .active {background-color: white;}
 }
 
 footer {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left:10px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left:30px;
     font-size: 20px;
     background-color: maroon;
 }
